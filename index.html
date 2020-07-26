@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculador de Mini World Boss</title>
+        <script language=javascript type="text/javascript">
+            dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+            monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro")
+            now = new Date
+        </script>
+    </head>
+<body>
+    <script language=javascript type="text/javascript">
+        document.write ("<h1> Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </h1>")
+        </script>
+    <form>
+        <table border="0">
+            <tr>
+                <th colspan="3">Calculador de Mini World Boss</th>
+            </tr>
+            <tr>
+                <td> Borboleta</td>
+                <td> <input type="button" value="Morreu" onclick="calcularBorboleta();"></td>
+                <td> Vai nascer de: <input type="text" name="resultBorboleta" id='resultBorboleta' size="60" maxlength="90" Readonly></td>
+            </tr>
+            <tr>
+                <td>Lagarto </td>
+                <td> <input type="button" value="Morreu" onclick="calcularLagarto();"></td>
+                <td> Vai nascer de: <input type="text" name="resultLagarto" id='resultLagarto' size="60" maxlength="90" Readonly></td>
+            </tr>
+            <tr>
+                <td>Aranha </td>
+                <td> <input type="button" value="Morreu" onclick="calcularAranha();"></td>
+                <td> Vai nascer de: <input type="text" name="resultAranha" id='resultAranha' size="60" maxlength="90" Readonly></td>
+            </tr>
+            <tr>
+                <td>Nitian Preto </td>
+                <td> <input type="button" value="Morreu" onclick="calcularNitianPreto();"></td>
+                <td> Vai nascer de: <input type="text" name="resultNitianPreto" id='resultNitianPreto' size="60" maxlength="90" Readonly></td>
+            </tr>
+            <tr>
+                <td>Nitian Branco </td>
+                <td> <input type="button" value="Morreu" onclick="calcularNitianBranco();"></td>
+                <td> Vai nascer de: <input type="text" name="resultNitianBranco" id='resultNitianBranco' size="60" maxlength="90" Readonly></td>
+            </tr>
+            <tr>
+                <td>Anta </td>
+                <td> <input type="button" value="Morreu" onclick="calcularAnta();"></td>
+                <td> Vai nascer de: <input type="text" name="resultAnta" id='resultAnta' size="60" maxlength="90" Readonly></td>
+            </tr>
+            <tr>
+                <td>Conde </td>
+                <td> <input type="button" value="Morreu" onclick="calcularConde();"></td>
+                <td> Vai nascer de: <input type="text" name="resultConde" id='resultConde' size="60" maxlength="90" Readonly></td>
+            </tr>
+            <tr>
+                <td>Macaco </td>
+                <td> <input type="button" value="Morreu" onclick="calcularMacaco();"></td>
+                <td> Vai nascer de: <input type="text" name="resultMacaco" id='resultMacaco' size="60" maxlength="90" Readonly></td>
+            </tr>
+            <tr>
+                <td>Urso </td>
+                <td> <input type="button" value="Morreu" onclick="calcularUrso();"></td>
+                <td> Vai nascer de: <input type="text" name="resultUrso" id='resultUrso' size="60" maxlength="90" Readonly></td>
+            </tr>
+        </table>
+    </form>
+
+    <script type="text/javascript">
+        function calcularBorboleta(){
+            now = new Date;
+            now.setMinutes(now.getMinutes()); 
+            let result = document.getElementById("resultBorboleta");
+            result.value = now;
+        }
+    </script>
+
+<script type="text/javascript">
+    function calcularLagarto(){ 
+        now = new Date;
+        now.setMinutes(now.getMinutes()+33); 
+        let result = document.getElementById("resultLagarto");
+        result.value = now;
+    }
+</script>
+
+<script type="text/javascript">
+    function calcularAranha(){ 
+        now = new Date;
+        now.setMinutes(now.getMinutes()+17); 
+        let result = document.getElementById("resultAranha");
+        result.value = now;
+    }
+</script>
+
+<script type="text/javascript">
+    function calcularNitianPreto(){ 
+        now = new Date;
+        now.setMinutes(now.getMinutes()); 
+        let result = document.getElementById("resultNitianPreto");
+        result.value = now;
+    }
+</script>
+
+<script type="text/javascript">
+    function calcularNitianBranco(){ 
+        now = new Date;
+        now.setMinutes(now.getMinutes()); 
+        let result = document.getElementById("resultNitianBranco");
+        result.value = now;
+    }
+</script>
+
+<script type="text/javascript">
+    function calcularAnta(){ 
+        now = new Date;
+        now.setMinutes(now.getMinutes()); 
+        let result = document.getElementById("resultAnta");
+        result.value = now;
+    }
+</script>
+
+<script type="text/javascript">
+    function calcularConde(){ 
+        now = new Date;
+        now.setMinutes(now.getMinutes()+50); 
+        let result = document.getElementById("resultConde");
+        result.value = now;
+    }
+</script>
+
+<script type="text/javascript">
+    function calcularMacaco(){ 
+        now = new Date;
+        now.setMinutes(now.getMinutes()-33); 
+        let result = document.getElementById("resultMacaco");
+        result.value = now;
+    }
+</script>
+
+<script type="text/javascript">
+    function calcularUrso(){ 
+        now = new Date;
+        now.setMinutes(now.getMinutes()-17); 
+        let result = document.getElementById("resultUrso");
+        result.value = now;
+    }
+</script>
+
+</body>
+</html>
