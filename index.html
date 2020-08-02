@@ -70,7 +70,8 @@
     <script type="text/javascript">
         function calcularBorboleta(){
             now = new Date;
-            now.setMinutes(now.getMinutes()); 
+            now.setMinutes(now.getMinutes());
+            now.setDate(now.getDate()+1);
             let result = document.getElementById("resultBorboleta");
             result.value = now;
         }
@@ -79,7 +80,8 @@
 <script type="text/javascript">
     function calcularLagarto(){ 
         now = new Date;
-        now.setMinutes(now.getMinutes()+33); 
+        now.setDate(now.getDate()+1); 
+        now.setMinutes(now.getMinutes()+33);
         let result = document.getElementById("resultLagarto");
         result.value = now;
     }
@@ -88,7 +90,8 @@
 <script type="text/javascript">
     function calcularAranha(){ 
         now = new Date;
-        now.setMinutes(now.getMinutes()+17); 
+        now.setMinutes(now.getMinutes()+17);
+        now.setDate(now.getDate()+1);
         let result = document.getElementById("resultAranha");
         result.value = now;
     }
@@ -97,7 +100,8 @@
 <script type="text/javascript">
     function calcularNitianPreto(){ 
         now = new Date;
-        now.setMinutes(now.getMinutes()); 
+        now.setMinutes(now.getMinutes());
+        now.setDate(now.getDate()+1); 
         let result = document.getElementById("resultNitianPreto");
         result.value = now;
     }
@@ -106,7 +110,8 @@
 <script type="text/javascript">
     function calcularNitianBranco(){ 
         now = new Date;
-        now.setMinutes(now.getMinutes()); 
+        now.setMinutes(now.getMinutes());
+        now.setDate(now.getDate()+1);
         let result = document.getElementById("resultNitianBranco");
         result.value = now;
     }
@@ -115,7 +120,8 @@
 <script type="text/javascript">
     function calcularAnta(){ 
         now = new Date;
-        now.setMinutes(now.getMinutes()); 
+        now.setMinutes(now.getMinutes());
+        now.setDate(now.getDate()+1); 
         let result = document.getElementById("resultAnta");
         result.value = now;
     }
@@ -124,7 +130,8 @@
 <script type="text/javascript">
     function calcularConde(){ 
         now = new Date;
-        now.setMinutes(now.getMinutes()+50); 
+        now.setMinutes(now.getMinutes()+50);
+        now.setDate(now.getDate()+1);
         let result = document.getElementById("resultConde");
         result.value = now;
     }
@@ -133,7 +140,8 @@
 <script type="text/javascript">
     function calcularMacaco(){ 
         now = new Date;
-        now.setMinutes(now.getMinutes()-33); 
+        now.setMinutes(now.getMinutes()-33);
+        now.setDate(now.getDate()+1); 
         let result = document.getElementById("resultMacaco");
         result.value = now;
     }
@@ -142,7 +150,8 @@
 <script type="text/javascript">
     function calcularUrso(){ 
         now = new Date;
-        now.setMinutes(now.getMinutes()-17); 
+        now.setDate(now.getDate()+1); 
+        now.setMinutes(now.getMinutes()-17);
         let result = document.getElementById("resultUrso");
         result.value = now;
     }
